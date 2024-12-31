@@ -34,10 +34,10 @@ public class calculator {
 						
 						
 						input.add();
-						input2.sub();
-						multi.multi();
-						input3.division();
-						modules.modules();
+						input.sub();
+						input.multi();
+						input.division();
+						input.modules();
 						
 					}
 
