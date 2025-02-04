@@ -44,6 +44,7 @@ public class Calc implements Calculator1 {
 		c.multi(a,b);
 		c.divide(a,b);
 		c.mod(a,b);
+		c.display();
 	}
 	
 
