@@ -36,6 +36,7 @@ public class ui {
 				System.out.println("Enter book id:");
 				int id = sc.nextInt();
 					sc.nextLine();
+					boolean bool2  =false;
 					
 					for(book b1 : arr) {
 						if(b1.getBid()==id) {
@@ -48,8 +49,10 @@ public class ui {
 							System.out.println("Enter the book price");
 							int price =sc.nextInt();
 							b1.setPrice(price);
-						}else {
+							
+						}if (!bool2){
 							System.out.println("invalid id");
+							
 						}
 									
 			}
@@ -61,15 +64,20 @@ public class ui {
 					System.out.println("Enter the book id : ");
 					int id1 = sc.nextInt();
 					sc.nextLine();
+					boolean bool1 = false;
 					for(book b2 : arr) {
 						if(b2.getBid()==id1){
 							arr.remove(b2);
+							bool1=true;
+							System.out.println("Removed successfully");
 							break;
 						}
 			
+		}if (!bool1){
+			System.out.println("invalid id");
+			
 		}
-	}
-			 else if(key==5) { 
+	}	 else if(key==5) { 
 				 bool=false;
 				 System.out.println("Good Bye.....");
 			
